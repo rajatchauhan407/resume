@@ -1,6 +1,20 @@
+/************************************************************************************* 
+*           *****************Table Of Contens****************                        *
+*            1. General CSS for Elements                                             *
+*            2. About                                                                *
+*            3. Details                                                              *
+*            4. Education                                                            *
+*            5. Career                                                               *
+*            6. Skills                                                               *
+*            7. Navigation Menu                                                      *
+*            8. Interests                                                            *
+*            9. Icon-Styling                                                         *
+*           10.Media-Queries                                                         *
+*                                                                                    *
+*                                                                                    *
+**************************************************************************************/
 
-
-/* ==================== General CSS for Elements ================= */
+/* ==================== 1. General CSS for Elements ================= */
 body{
     margin:0;
 }
@@ -60,7 +74,7 @@ main span{
     padding-left:1.1rem;
     border-radius: 5px 5px 5px 5px;
 }
-/* ======================= About Section Starts Here ========================== */
+/* =======================2. About Section Starts Here ========================== */
 #about{
     display:grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -90,7 +104,6 @@ main span{
 #details{
     display:grid;
     grid-template-columns: 1fr;
-    /* border-right: 3px solid black; */
 }
 .details-info{
     display: grid;
@@ -152,7 +165,6 @@ main span{
     width:90%;
     aspect-ratio: 9/16;
     margin:auto;
-    /* border-bottom: 2px solid #011936; */
     border-radius: 5px;
     box-shadow: 3px 3px 5px 1px #C3C3C3;
 }
@@ -235,11 +247,8 @@ section{
 .interests-group-info, .languages-group-info{
     display:grid;
     grid-template-columns: 1fr;
-    /* background: #C1CFDA; */
     background:#AFC1D6;
-    /* aspect-ratio: 1/1; */
     border-radius: 50%;
-    /* width:60%; */
     width:110px;
     height:110px;
     margin:auto;
@@ -256,7 +265,6 @@ section{
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: -1.5rem;
-    /* color: #F87060; */
 }
 
 /* ================= Media Queries : Desktop First Approach ================ */
@@ -301,13 +309,11 @@ section{
         display: none;
     }
     .details-icon{
-        display: inline-block;
+        display: inline-block !important;
     }
     .details-info-group{
         display:grid;
         grid-template-columns: 1fr 10fr;
-        /* border-left:3px solid #011936; */
-        /* padding-left: 1rem; */
     }   
     .interests-group, .languages-group{
         display: grid;
@@ -348,10 +354,8 @@ section{
     }
     main span{
         display: inline-block;
-        /* width:250px; */
         background: #F5BB00 ;
         padding:0.3rem 1rem;
-        /* margin-left: -1.1rem; */
         padding-left:1.1rem;
         border-radius: 5px 5px 5px 5px;
     }
