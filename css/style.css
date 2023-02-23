@@ -1,3 +1,6 @@
+
+
+/* ==================== General CSS for Elements ================= */
 body{
     margin:0;
 }
@@ -16,11 +19,12 @@ p,ul{
 ul{
     padding-left:25px;
 }
+h1,h2,h3{
+    color:#011936;
+}
 .wrapper{
     display:grid;
     grid-template-columns: 15% 70% 15%;
-    /* grid-gap:1rem; */
-    /* box-sizing: border-box; */
 }
 
 .main-content{
@@ -33,7 +37,7 @@ section:nth-child(1){
     border:none;
 }
 
-/* ================ Experimental Code for design =============== */
+/* ================ Experimental Code for design for dot  =============== */
 #career::after, #projects::after, #skills::after, #interests::after, #languages::after, #details::after, #education::after{
     /* display:block; */
     /* content:""; */
@@ -51,10 +55,8 @@ h2{
 }
 main span{
     display: inline-block;
-    /* width:250px; */
     background: #F5BB00 ;
     padding:0.3rem 1rem;
-    /* margin-left: -1.1rem; */
     padding-left:1.1rem;
     border-radius: 5px 5px 5px 5px;
 }
@@ -80,7 +82,11 @@ main span{
     margin:0;
     line-height: 1.3em;
 }
-/* ================ Details CSS starts=================== */
+#details a{
+    text-decoration: none;
+    color: black;
+}
+/* =========================== Details CSS starts======================== */
 #details{
     display:grid;
     grid-template-columns: 1fr;
@@ -95,14 +101,12 @@ main span{
 .details-info-group{
     display:grid;
     grid-template-columns: 1fr;
-    /* border-left:3px solid #011936; */
-    /* padding-left: 1rem; */
 }
 .details-info-group>p{
     margin:0;
 }
 .details-icon{
-    display: none; 
+    display: none !important; 
 }
 /* ========================= Education Starts ====================*/
 #education h3{
@@ -260,6 +264,17 @@ section{
     .wrapper{
         grid-template-columns: 15% 85%;
         padding-right: 1rem;
+    }
+    .career-info{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    .career-info-group>p, .career-info-group ul{
+        font-size:0.9rem;
+        margin:.5rem 0;
+    }
+    .career-info-group>h3{
+        margin:.5rem 0;
     }
 
 }
