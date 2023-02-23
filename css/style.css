@@ -1,0 +1,358 @@
+body{
+    margin:0;
+}
+h1,h2{
+    font-family: 'Playfair Display', serif;
+}
+h3{
+    font-size: 1.2rem;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight:600;
+}
+p,ul{
+    font-size: 1rem;
+    font-family: 'Red Hat Display', sans-serif;
+}
+ul{
+    padding-left:25px;
+}
+.wrapper{
+    display:grid;
+    grid-template-columns: 15% 70% 15%;
+    /* grid-gap:1rem; */
+    /* box-sizing: border-box; */
+}
+
+.main-content{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:2rem;
+}
+
+section:nth-child(1){
+    border:none;
+}
+
+/* ================ Experimental Code for design =============== */
+#career::after, #projects::after, #skills::after, #interests::after, #languages::after, #details::after, #education::after{
+    /* display:block; */
+    /* content:""; */
+    position:relative;
+    width: .5rem;
+    height:.5rem;
+    border-radius: 50%;
+    background:#011936;
+    margin-left:-1.3rem;
+}
+h2{
+    border-bottom: 3px solid #011936;
+    padding-bottom: 1rem;
+    margin-top:0;
+}
+main span{
+    display: inline-block;
+    /* width:250px; */
+    background: #F5BB00 ;
+    padding:0.3rem 1rem;
+    /* margin-left: -1.1rem; */
+    padding-left:1.1rem;
+    border-radius: 5px 5px 5px 5px;
+}
+/* ======================= About Section Starts Here ========================== */
+#about{
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    border-left:2px solid #F5BB00
+}
+.about-image{
+    grid-template-columns: 1/2;
+    padding: 2rem 2rem 2rem 0;
+}
+.about-image img{
+    border-radius: 50%;
+    width:120px; 
+    height:120px;
+}
+.about-content{
+    grid-column:2/3;
+}
+#about p{
+    margin:0;
+    line-height: 1.3em;
+}
+/* ================ Details CSS starts=================== */
+#details{
+    display:grid;
+    grid-template-columns: 1fr;
+    /* border-right: 3px solid black; */
+}
+.details-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:1rem;
+    row-gap: 1rem;
+}
+.details-info-group{
+    display:grid;
+    grid-template-columns: 1fr;
+    /* border-left:3px solid #011936; */
+    /* padding-left: 1rem; */
+}
+.details-info-group>p{
+    margin:0;
+}
+.details-icon{
+    display: none; 
+}
+/* ========================= Education Starts ====================*/
+#education h3{
+    margin-bottom: 0;
+}
+#education p{
+    margin:0;
+}
+.education-group-info p:nth-child(3){
+    color:gray;
+    font-size: 12px;
+}
+/* ========================Career Starts======================= */
+#career{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+.career-info{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.career-info ul{
+    padding-left:20px;
+}
+
+/* ================projects================ */
+#projects{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.projects-info{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+.calup-screenshots, .afresh-screenshots{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap:1rem;
+    row-gap:2rem;
+    padding-top:2rem;
+}
+.calup-screenshots>img, .afresh-screenshots>img{
+    width:90%;
+    aspect-ratio: 9/16;
+    margin:auto;
+    /* border-bottom: 2px solid #011936; */
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 1px #C3C3C3;
+}
+/* ========================Skills==================== */
+#skills{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+.skills-info{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+#skills ul {
+    list-style: none; /* Remove default bullets */
+  }
+  
+#skills ul li::before {
+    content: "\2043";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #011936; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+  }
+/* ===================== Navigation Menu=================== */
+.nav-menu{
+    margin:0;
+    position: sticky;
+    top: 0vh;
+}
+.nav-menu{
+    width:70%;
+    margin:auto;
+    text-align: center;
+    background: #011936;
+    color:white;
+    font-family: 'Red Hat Display', sans-serif;
+    border-radius: 5px;
+    padding: .2rem .5rem;
+}
+.nav-menu>ul{
+    padding-left:0;
+}
+.nav-menu>ul>li{
+    list-style-type: none;
+    padding:1.5rem 0;
+    border-bottom: 1px solid #fff;
+}
+.nav-menu>ul>li:nth-child(8){
+    border-bottom: 0;
+}
+.nav-menu>ul>li>a{
+    color:#fff;
+    text-decoration: none;
+}
+.nav-menu>ul>li:active{
+    color: #011936;
+    background:#C1CFDA;
+    border-radius: 5px;
+    
+}
+.nav-menu>ul>li>a:active{
+    color:#011936;
+}
+section{
+    border-left: 2px solid #F5BB00;
+    padding-left: 1rem;
+    padding-top:0;
+}
+/* ==================== Interests ========================= */
+#interests, #languages{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+.interests-group, .languages-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    
+}
+.interests-group-info, .languages-group-info{
+    display:grid;
+    grid-template-columns: 1fr;
+    /* background: #C1CFDA; */
+    background:#AFC1D6;
+    /* aspect-ratio: 1/1; */
+    border-radius: 50%;
+    /* width:60%; */
+    width:110px;
+    height:110px;
+    margin:auto;
+    text-align: center;
+}
+.interests-group-info>p, .languages-group-info>p{
+    margin: -.2rem auto;
+    font-size: .8rem;
+}
+
+/* ======================= Icons Styling ======================= */
+.music-icon, .reading-icon, .chess-icon, .volleyball-icon, .language-icon{
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: -1.5rem;
+    /* color: #F87060; */
+}
+
+/* ================= Media Queries : Desktop First Approach ================ */
+@media only screen and (max-width:900px){
+    .wrapper{
+        grid-template-columns: 15% 85%;
+        padding-right: 1rem;
+    }
+
+}
+
+@media only screen and (max-width:750px){
+    .wrapper{
+        grid-template-columns:100%;
+        padding: 0 1rem;
+    }
+    nav{
+        display: none;
+    }
+    #about{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+        border-left:0;
+    }
+    .about-content{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    #details h3{
+        display: none;
+    }
+    .details-icon{
+        display: inline-block;
+    }
+    .details-info-group{
+        display:grid;
+        grid-template-columns: 1fr 10fr;
+        /* border-left:3px solid #011936; */
+        /* padding-left: 1rem; */
+    }   
+    .interests-group, .languages-group{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 0.5rem;
+    }
+    .details-info{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap:1rem;
+        row-gap: 1rem;
+    }
+    .calup-screenshots, .afresh-screenshots{
+        display:none;
+    }
+    .about-image{
+        grid-column: 1/3;
+        padding: 2rem 0 0 0;
+    }
+    section{
+        border-left: none;
+        padding-left: 1rem;
+        padding-top:0;
+    }
+    #career::after, #projects::after, #skills::after, #interests::after, #languages::after, #details::after, #education::after{
+        display:none;
+        content:"";
+        position:relative;
+        width: .5rem;
+        height:.5rem;
+        border-radius: 50%;
+        background:#011936;
+        margin-left:-1.3rem;
+    }
+    .interests-group-info, .languages-group-info{
+        margin-left:1rem;
+        margin-bottom: 2rem;
+    }
+    main span{
+        display: inline-block;
+        /* width:250px; */
+        background: #F5BB00 ;
+        padding:0.3rem 1rem;
+        /* margin-left: -1.1rem; */
+        padding-left:1.1rem;
+        border-radius: 5px 5px 5px 5px;
+    }
+    .career-info{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    .career-info-group>p{
+        font-size:0.8rem;
+        margin:.5rem 0;
+
+    }
+    .career-info-group>h3{
+        margin:.5rem 0;
+    }
+    .career-info-group>ul, #projects ul,#skills ul,#about p{
+        font-size: .8rem;
+    }
+}
