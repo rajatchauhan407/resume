@@ -23,3 +23,6 @@
 (function script(){
     console.log("Think of the resume in a way that you think");
 }());
+(function script(){
+    console.log("Think of the resume in a way that you think");
+}());
