@@ -26,3 +26,5 @@
     console.log("Think of the resume in a way that you think");
 }());
 
+let result = "doing something".split('+');
+console.log(result);
